@@ -1,0 +1,133 @@
+## Interface ##
+- bagian yg sama antara 2 atau lebih komponen terpisah pd sebuah sistem komputer
+
+- interface digunakan agar 2 bagian bisa saling terhubung
+
+- contoh : GUI pada OS, menghubungkan manusia dgn komputer
+
+## API (Application Programming Interface) ##
+- sekumpulan fungsi, subroutine, protokol komunikasi, atau tools untuk membuat perangkat lunak
+
+- antarmuka yg berupa kumpulan fungsi yg dapat 'dipanggil' atau dijalankan oleh program lain
+
+- memungkinkan kita terhubung satu sama lain
+
+- beberapa penerapan API :
+    1. bahasa pemrograman
+        - contoh : melakukan koneksi ke DBMS, mengakses elemen pada DOM di JS
+    2. library & framework
+        - contoh : mengambil data
+    3. sistem operasi
+        - contoh : menjalankan service
+    4. web API / web service
+        - contoh : SOAP (Simple Object Access Protocol) dan REST (Representational State Transfer)
+
+## Web API / Web service ##
+- sebuah sistem perangkat lunak yg dibuat untuk mendukung interaksi antar 2 aplikasi yg berbeda melalui jaringan
+
+- menggunakan protokol HTTP
+
+#################################################
+
+## REST API ##
+- 'gaya arsitektural' perangkat lunak yg di dalamnya mendefinisikan aturan2 untuk membuat web service
+
+- Ilustrasi :
+    - API adalah penghubung
+    - REST API adalah aturannya
+    - ada Request & Response
+    - data yg dikirim/diterima berupa JSON
+
+- Diciptakan oleh Roy Fielding, pada disertasi PhDnya
+
+- Stateless : 
+    - Setiap request HTTP dilakukan scr terisolasi
+    - Server tdk menyimpan state apapun mengenai sisi dr client
+    - Setiap request dr client harus berisi semua   informasi yg dibutuhkan server, termasuk otentikasi
+
+- Hampir selalu menggunakan HTTP
+
+## Kode Status ##
+200 - Success
+404 - Not Found
+500 - Server Error
+
+## HTTP Method / Verbs ##
+Agar aplikasinya RESTful, gunakan metode : 
+1. GET - Mengambil data
+2. POST - Menambah data
+3. PUT - Mengubah data (tdk bisa di browser)
+4. DELETE - Menghapus data (tdk bisa di browser)
+
+## RESTful API ##
+1. Menggunakan HTTP method yg benar
+2. URL / endpointsnya menggunakan kata benda, bukan kata kerja
+3. Stateless
+
+####################################################
+
+## JSON (Javascript Object Notation) ##
+- sebuah file format standar yg menggunakan tulisan/teks yg dpt dibaca oleh manusia untuk pertukaran data, yg di dalamnya berisi pasangan antara key dan value
+
+- Detailnya : 
+    - Format pertukaran data tekstual yg sangat 'ringan'
+    - Sintaksnya sangat 'sederhana dan jelas' (dibanding XML)
+    - Dapat digunakan pd 'beragam bahasa pemrograman'
+    - Tiap bahasa pemrograman memiliki cara tersendiri dlm berinteraksi dgn JSON
+    - Dibuat berdasarkan format object pada JS
+    - Digunakan untuk file 'konfigurasi'
+    - Tidak support 'komentar'
+    - Memiliki ekstensi .json
+    - Dibuat dan diusulkan oleh Douglas Crockford
+    - Tidak memiliki 'method'
+
+Format sintaks :
+{
+    "key" : "value"
+}
+
+contoh : 
+{
+    "nama" : "Bewok",
+    "umur" : 23
+}
+
+Tipe Data Value JSON (BASONN)
+- Boolean = true/false
+- Array = ["value1", "value2", ...]
+- String = "text"
+- Object = {"key" : "value"}
+- Number = int / float
+- Null = null
+
+## Pada PHP ##
+- json_encode("array")
+    - mengubah array associative menjadi JSON
+- json_decode("json", true)
+    - membaca file json, lalu mengubahnya menjadi array associative
+
+Mengakses file JSON
+file_get_contents("folder/file.json")
+
+## Pada Javascript ##
+- JSON.stringify()
+    - mengubah object menjadi JSON
+- JSON.parse()
+    - mengubah JSON menjadi object
+
+Mengakses file JSON
+- ajax
+    - XMLHttpRequest
+    - JQuery
+
+
+
+
+
+
+
+
+
+
+
+

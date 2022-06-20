@@ -1,0 +1,24 @@
+[
+  {
+    "nama": "Zhafari",
+    "umur": 23,
+    "nim": "001",
+    "lulus": true,
+    "hobi": ["musik", "main game", "olahraga"],
+    "dospem": {
+      "pembimbing1": "Bu Yuni",
+      "pembimbing2": "Pak Sarip"
+    }
+  },
+  {
+    "nama": "Agus",
+    "umur": 22,
+    "nim": "501",
+    "lulus": false,
+    "hobi": ["peliharaan", "olahraga"],
+    "dospem": {
+      "pembimbing1": null,
+      "pembimbing2": null
+    }
+  }
+]
