@@ -120,7 +120,21 @@ Mengakses file JSON
     - XMLHttpRequest
     - JQuery
 
+############################################################
 
+## CORS (Cross Origin Resource Sharing) ##
+- mekanisme yg membuat kita dpt mengakses sebuah resource (data, document, script) dari domain lain
+
+- caranya adalah dengan membuat server memperbolehkan adanya akses data dari luar domain
+
+- modifikasi 'Access-Control-Allow-Origin'
+
+- Membuat file '.htaccess' yang berisi : 
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+
+- atau dengan JSONP
 
 
 
