@@ -136,6 +136,24 @@ Mengakses file JSON
 
 - atau dengan JSONP
 
+###################################################################
+
+## Public API / Open API ##
+- sebuah API (REST API) yg dpt diakses secara "publik", yg didlmnya tersedia aturan untuk developer agar dpt mengakses data
+
+- beberapa sumber : 
+    - https://any-api.com
+    - https://github.com/toddmotto/public-apis
+    - https://github.com/farizdotid/DAFTAR-API-LOKAL-INDONESIA
+
+## Otentikasi (Auth) ##
+- Tanpa otentikasi
+- Menggunakan key / token
+- OAuth
+- Perhatikan CORS
+
+** youtube api key : AIzaSyDLHSuPQvvOghbDLA5mnB0YBOL1qerWcw0
+
 
 
 
